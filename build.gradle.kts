@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "xyz.amraleth"
-version = "1.0-SNAPSHOT"
+version = "1.4-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -44,7 +44,8 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "xyz.amraleth"
             artifactId = "AmraCord"
-            version = "1.3-SNAPSHOT"
+            version = "1.4-SNAPSHOT"
+
 
             from(components["java"])
         }

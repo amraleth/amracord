@@ -1,9 +1,13 @@
 package xyz.amraleth.amracord.registry;
 
 import net.dv8tion.jda.api.JDA;
+import org.jetbrains.annotations.NotNull;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import xyz.amraleth.amracord.module.Module;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Handles the registering of events. Each listener needs to extend the {@link net.dv8tion.jda.api.hooks.ListenerAdapter} class
@@ -12,15 +16,17 @@ import java.util.List;
  * @see net.dv8tion.jda.api.hooks.ListenerAdapter
  */
 public class EventRegistry {
-    private static final List<Object> LISTENERS = new ArrayList<>();
+    private static final Logger LOGGER = LoggerFactory.getLogger("AmraCord Events");
+    private static final Map<Module, Object> LISTENERS = new HashMap<>();
 
     /**
      * Adds a listener to the event list
      *
+     * @param module The module the listener is a part of
      * @param listener The listener
      */
-    public static void addEvent(Object listener) {
-        LISTENERS.add(listener);
+    public static void addEvent(@NotNull Module module, @NotNull Object listener) {
+        LISTENERS.put(module, listener);
     }
 
     /**
@@ -28,9 +34,10 @@ public class EventRegistry {
      *
      * @param jda An instance of the bot
      */
-    public static void registerListeners(JDA jda) {
-        for (Object listener : LISTENERS) {
+    public static void registerListeners(@NotNull JDA jda) {
+        LISTENERS.forEach((module, listener) -> {
+            LOGGER.info("Loading listener {} for module {}", listener.getClass().getName(), module.moduleId());
             jda.addEventListener(listener);
-        }
+        });
     }
 }
