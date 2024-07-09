@@ -1,4 +1,4 @@
-package xyz.amraleth.amracord.registry;
+package xyz.amraleth.amracord.test.registry;
 
 import net.dv8tion.jda.api.JDA;
 

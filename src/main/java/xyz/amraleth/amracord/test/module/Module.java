@@ -1,4 +1,4 @@
-package xyz.amraleth.amracord.module;
+package xyz.amraleth.amracord.test.module;
 
 import org.jetbrains.annotations.NotNull;
 

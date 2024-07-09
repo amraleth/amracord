@@ -1,11 +1,11 @@
-package xyz.amraleth.amracord.registry;
+package xyz.amraleth.amracord.test.registry;
 
 import lombok.Getter;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
-import xyz.amraleth.amracord.exception.NoModuleException;
-import xyz.amraleth.amracord.module.CustomModule;
-import xyz.amraleth.amracord.module.Module;
+import xyz.amraleth.amracord.test.exception.NoModuleException;
+import xyz.amraleth.amracord.test.module.CustomModule;
+import xyz.amraleth.amracord.test.module.Module;
 
 import java.util.ArrayList;
 import java.util.List;
