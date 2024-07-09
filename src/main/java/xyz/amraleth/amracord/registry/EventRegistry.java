@@ -5,7 +5,6 @@ import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import xyz.amraleth.amracord.module.CustomModule;
-import xyz.amraleth.amracord.module.Module;
 
 import java.util.HashMap;
 import java.util.Map;
