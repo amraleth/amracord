@@ -44,7 +44,7 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = "xyz.amraleth"
             artifactId = "AmraCord"
-            version = "1.1-SNAPSHOT"
+            version = "1.3-SNAPSHOT"
 
             from(components["java"])
         }
