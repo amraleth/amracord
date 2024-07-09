@@ -1,8 +1,8 @@
-package xyz.amraleth.amracord.test.exception;
+package xyz.amraleth.amracord.exception;
 
 import org.jetbrains.annotations.NotNull;
-import xyz.amraleth.amracord.test.module.Module;
-import xyz.amraleth.amracord.test.registry.ModuleRegistry;
+import xyz.amraleth.amracord.registry.ModuleRegistry;
+import xyz.amraleth.amracord.module.Module;
 
 /**
  * Thrown when a module class is missing the {@link Module} annotation and therefor doesn't

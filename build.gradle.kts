@@ -1,5 +1,6 @@
 plugins {
-    id("java")
+    id("java-library")
+    id("maven-publish")
 }
 
 group = "xyz.amraleth"
@@ -36,4 +37,25 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            groupId = "xyz.amraleth"
+            artifactId = "AmraCord"
+            version = "1.1-SNAPSHOT"
+
+            from(components["java"])
+        }
+    }
+    repositories {
+        maven {
+            url = uri("https://repo.amraleth.xyz/repository/amracord/")
+            credentials {
+                username = extra["repoUser"].toString()
+                password = extra["repoPassword"].toString()
+            }
+        }
+    }
 }

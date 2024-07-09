@@ -1,11 +1,12 @@
-package xyz.amraleth.amracord.test.registry;
+package xyz.amraleth.amracord.registry;
 
 import lombok.Getter;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
-import xyz.amraleth.amracord.test.exception.NoModuleException;
-import xyz.amraleth.amracord.test.module.CustomModule;
-import xyz.amraleth.amracord.test.module.Module;
+import xyz.amraleth.amracord.exception.NoModuleException;
+import xyz.amraleth.amracord.module.CustomModule;
+import xyz.amraleth.amracord.module.Module;
+import xyz.amraleth.amracord.module.ModuleBase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,7 +43,7 @@ public class ModuleRegistry {
      * @param logger The logger to log to
      * @throws NoModuleException If the module class is missing the module annotation
      */
-    public void initModules(Logger logger) throws NoModuleException {
+    public void initModules(Logger logger, ModuleBase moduleBase) throws NoModuleException {
         for (CustomModule customModule : this.modules) {
             // check if the class contains the module annotation
             Class<?> moduleClazz = customModule.getClass();
@@ -58,7 +59,7 @@ public class ModuleRegistry {
                     moduleAnnotation.moduleId(),
                     moduleAnnotation.version(),
                     moduleClazz.getPackageName());
-            customModule.initModule();
+            customModule.initModule(moduleBase);
             logger.info("Module: {} loaded!", moduleAnnotation.moduleId());
         }
     }

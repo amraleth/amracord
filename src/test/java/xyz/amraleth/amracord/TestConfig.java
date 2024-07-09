@@ -1,4 +1,4 @@
-package xyz.amraleth.amracord.test;
+package xyz.amraleth.amracord;
 
 import lombok.Getter;
 import lombok.Setter;

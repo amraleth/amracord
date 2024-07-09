@@ -1,4 +1,4 @@
-package xyz.amraleth.amracord.test.config;
+package xyz.amraleth.amracord.config;
 
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;

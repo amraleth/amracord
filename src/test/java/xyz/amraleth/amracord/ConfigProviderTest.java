@@ -1,8 +1,8 @@
-package xyz.amraleth.amracord.test;
+package xyz.amraleth.amracord;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import xyz.amraleth.amracord.test.config.ConfigProvider;
+import xyz.amraleth.amracord.config.ConfigProvider;
 
 public class ConfigProviderTest {
 
