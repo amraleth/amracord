@@ -1,6 +1,7 @@
 package xyz.amraleth.amracord.registry;
 
 import net.dv8tion.jda.api.entities.Guild;
+import net.dv8tion.jda.api.interactions.commands.build.CommandData;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,12 +34,13 @@ public class CommandRegistry {
      * @param guild The guild to register for
      */
     public static void registerCommands(@NotNull Guild guild) {
+        List<CommandData> commands = new ArrayList<>();
         COMMANDS.forEach(command -> {
             LOGGER.info("Loading command: {} for module: {}", command.name(), command.customModule() == null ?
                     "Core" :
                     command.customModule().getClass().getName());
-
-            guild.updateCommands().addCommands(command.commandData()).queue();
+            commands.add(command.commandData());
         });
+        guild.updateCommands().addCommands(commands).queue();
     }
 }
