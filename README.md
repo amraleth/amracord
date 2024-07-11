@@ -32,8 +32,8 @@ required to implement the ``CustomModule`` interface, which provides the ``initM
 method for each module. For example:
 
 ```java
-import xyz.amraleth.amracord.module.CustomModule;
-import xyz.amraleth.amracord.module.Module;
+import module.services.noloy.nolcord.CustomModule;
+import module.services.noloy.nolcord.Module;
 
 
 @Module(moduleId = "example", moduleName = "Example Module", version = "1.0", description = "An example module for previewing the module system")
@@ -50,8 +50,8 @@ public class ExampleModule implements CustomModule {
 Modules are not registered by default, therefore the ``ModuleRegistry`` is required:
 
 ```java
-import xyz.amraleth.amracord.exception.NoModuleException;
-import xyz.amraleth.amracord.registry.ModuleRegistry;
+import exception.services.noloy.nolcord.NoModuleException;
+import registry.services.noloy.nolcord.ModuleRegistry;
 
 public class BotClass {
     private final ModuleRegistry moduleRegistry;

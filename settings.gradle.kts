@@ -1,2 +1,2 @@
-rootProject.name = "AmraCord"
+rootProject.name = "Nolcord"
 
