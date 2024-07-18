@@ -1,4 +1,4 @@
-package services.noloy.nolcord.module;
+package xyz.amraleth.amracord.module;
 
 /**
  * Represents a module which can have its own events and commands

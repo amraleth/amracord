@@ -1,8 +1,8 @@
-package services.noloy.nolcord.exception;
+package xyz.amraleth.amracord.exception;
 
 import org.jetbrains.annotations.NotNull;
-import services.noloy.nolcord.registry.ModuleRegistry;
-import services.noloy.nolcord.module.Module;
+import xyz.amraleth.amracord.registry.ModuleRegistry;
+import xyz.amraleth.amracord.module.Module;
 
 /**
  * Thrown when a module class is missing the {@link Module} annotation and therefor doesn't

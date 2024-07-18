@@ -1,7 +1,5 @@
 # AmraCord
 
-[![wakatime](https://wakatime.com/badge/gitlab/Amraleth/amracord.svg)](https://wakatime.com/badge/gitlab/Amraleth/amracord)
-
 AmraCord is a very simple collection of classes for Discord Bot development
 using [JDA](https://github.com/discord-jda/JDA). A lot of trivial tasks have been simplified for faster and easier bot
 development.
@@ -12,14 +10,14 @@ development.
 
 ```kotlin
 maven {
-    url = uri("https://repo.amraleth.xyz/repository/amracord/")
+    url = uri("https://repo.amraleth.xyz/repository/amraleth/")
 }
 ```
 
 2Add the dependency
 
 ```kotlin
-implementation("xyz.amraleth:AmraCord:VERSION")
+implementation("xyz.amraleth:amracord:1.5.1-SNAPSHOT")
 ```
 
 ## Features
