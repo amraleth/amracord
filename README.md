@@ -10,7 +10,7 @@ development.
 
 ```kotlin
 maven {
-    url = uri("https://repo.amraleth.xyz/repository/amracord/")
+    url = uri("https://repo.amraleth.xyz/repository/amraleth/")
 }
 ```
 
