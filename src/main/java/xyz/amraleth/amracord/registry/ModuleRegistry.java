@@ -1,12 +1,12 @@
-package services.noloy.nolcord.registry;
+package xyz.amraleth.amracord.registry;
 
 import lombok.Getter;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import services.noloy.nolcord.exception.NoModuleException;
-import services.noloy.nolcord.module.CustomModule;
-import services.noloy.nolcord.module.Module;
+import xyz.amraleth.amracord.exception.NoModuleException;
+import xyz.amraleth.amracord.module.CustomModule;
+import xyz.amraleth.amracord.module.Module;
 
 import java.util.ArrayList;
 import java.util.List;

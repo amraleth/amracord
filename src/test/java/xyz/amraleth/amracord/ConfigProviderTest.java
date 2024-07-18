@@ -1,8 +1,8 @@
-package services.noloy.nolcord;
+package xyz.amraleth.amracord;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import services.noloy.nolcord.config.ConfigProvider;
+import xyz.amraleth.amracord.config.ConfigProvider;
 
 public class ConfigProviderTest {
 
