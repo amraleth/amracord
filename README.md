@@ -17,7 +17,7 @@ maven {
 2Add the dependency
 
 ```kotlin
-implementation("services.noloy:nolcord:1.5.1-SNAPSHOT")
+implementation("services.noloy:amracord:1.5.1-20241007.191803-1")
 ```
 
 ## Features
