@@ -1,6 +1,6 @@
-# AmraCord
+# NolCord
 
-AmraCord is a very simple collection of classes for Discord Bot development
+NolCord is a very simple collection of classes for Discord Bot development
 using [JDA](https://github.com/discord-jda/JDA). A lot of trivial tasks have been simplified for faster and easier bot
 development.
 
@@ -10,28 +10,28 @@ development.
 
 ```kotlin
 maven {
-    url = uri("https://repo.amraleth.xyz/repository/amraleth/")
+    url = uri("https://repo.noloy.services/repository/nolcord/")
 }
 ```
 
 2Add the dependency
 
 ```kotlin
-implementation("xyz.amraleth:amracord:1.5.1-SNAPSHOT")
+implementation("services.noloy:nolcord:1.5.1-SNAPSHOT")
 ```
 
 ## Features
 
 ### Module system
 
-In AmraCord all functionality is decided by so-called modules. Each module has a main class which is annotated with
+In NolCord all functionality is decided by so-called modules. Each module has a main class which is annotated with
 the ``@Module`` annotation. It holds various meta-data required by the module loader. Furthermore, each module is
 required to implement the ``CustomModule`` interface, which provides the ``initModule()`` method. It is the entrypoint
 method for each module. For example:
 
 ```java
-import module.services.noloy.nolcord.CustomModule;
-import module.services.noloy.nolcord.Module;
+import services.noloy.nolcord.module.CustomModule;
+import services.noloy.nolcord.module.Module;
 
 
 @Module(moduleId = "example", moduleName = "Example Module", version = "1.0", description = "An example module for previewing the module system")
@@ -48,8 +48,8 @@ public class ExampleModule implements CustomModule {
 Modules are not registered by default, therefore the ``ModuleRegistry`` is required:
 
 ```java
-import exception.services.noloy.nolcord.NoModuleException;
-import registry.services.noloy.nolcord.ModuleRegistry;
+import services.noloy.nolcord.exception.NoModuleException;
+import services.noloy.nolcord.registry.ModuleRegistry;
 
 public class BotClass {
     private final ModuleRegistry moduleRegistry;

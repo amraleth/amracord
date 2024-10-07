@@ -1,4 +1,4 @@
-package xyz.amraleth.amracord.config;
+package services.noloy.nolcord.config;
 
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;

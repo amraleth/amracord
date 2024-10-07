@@ -1,9 +1,9 @@
-package xyz.amraleth.amracord.command;
+package services.noloy.nolcord.command;
 
 import net.dv8tion.jda.api.interactions.commands.build.CommandData;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import xyz.amraleth.amracord.module.CustomModule;
+import services.noloy.nolcord.module.CustomModule;
 
 /**
  * Provides data about a command

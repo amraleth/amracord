@@ -1,10 +1,10 @@
-package xyz.amraleth.amracord.registry;
+package services.noloy.nolcord.registry;
 
 import net.dv8tion.jda.api.JDA;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import xyz.amraleth.amracord.module.CustomModule;
+import services.noloy.nolcord.module.CustomModule;
 
 import java.util.HashMap;
 import java.util.Map;
