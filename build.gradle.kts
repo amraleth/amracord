@@ -43,7 +43,7 @@ publishing {
     publications {
         create<MavenPublication>("maven") {
             groupId = "services.noloy"
-            artifactId = "amracord"
+            artifactId = "nolcord"
             version = "1.5.1-SNAPSHOT"
 
 
