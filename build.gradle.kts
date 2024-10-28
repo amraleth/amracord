@@ -3,8 +3,8 @@ plugins {
     id("maven-publish")
 }
 
-group = "services.noloy"
-version = "1.5.1-SNAPSHOT"
+group = "xyz.amraleth"
+version = "1.6.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -42,9 +42,9 @@ tasks.test {
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            groupId = "services.noloy"
-            artifactId = "nolcord"
-            version = "1.5.1-SNAPSHOT"
+            groupId = "xyz.amraleth"
+            artifactId = "amracord"
+            version = "1.6.0-SNAPSHOT"
 
 
             from(components["java"])
@@ -52,7 +52,7 @@ publishing {
     }
     repositories {
         maven {
-            url = uri("https://repo.noloy.services/repository/nolcord/")
+            url = uri("https://repo.amraleth.xyz/repository/amracord/")
             credentials {
                 username = findProperty("repoUser").toString()
                 password = findProperty("repoPassword").toString()

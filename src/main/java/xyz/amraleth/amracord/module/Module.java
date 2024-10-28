@@ -1,4 +1,4 @@
-package services.noloy.nolcord.module;
+package xyz.amraleth.amracord.module;
 
 import org.jetbrains.annotations.NotNull;
 

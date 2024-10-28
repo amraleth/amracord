@@ -1,4 +1,4 @@
-package services.noloy.nolcord;
+package xyz.amraleth.amracord;
 
 import lombok.Getter;
 import lombok.Setter;

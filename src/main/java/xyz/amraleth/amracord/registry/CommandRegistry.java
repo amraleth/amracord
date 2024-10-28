@@ -1,11 +1,11 @@
-package services.noloy.nolcord.registry;
+package xyz.amraleth.amracord.registry;
 
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.interactions.commands.build.CommandData;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import services.noloy.nolcord.command.CommandProvider;
+import xyz.amraleth.amracord.command.CommandProvider;
 
 import java.util.ArrayList;
 import java.util.List;
